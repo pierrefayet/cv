@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src:
+        url('webfonts/OpenSans-BoldItalic-webfont.ttf') format('truetype');
+}
+
+body {
+    
+    height: 90%;
+    background: black;
+}
+
+header {
+    height: 340px;
+}
+
+header img {
+    background: rgb(19, 18, 18);
+    float: left;
+}
+
+#contents {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+.part1 {
+    order: 1;
+    background: rgb(0 0 0);
+    width: 600px;
+    padding: 10px;
+    border: 3px solid rgb(241 241 241);
+    border-radius: 25px;
+    color: aliceblue;
+    width:auto;
+    margin: 0 6px;
+}
+
+.part2 {
+    order: 3;
+    background: rgb(10 10 10);
+    padding: 10px;
+    width: 600px;
+    border: 3px solid rgb(241 241 241);
+    border-radius: 25px;
+    color: aliceblue;
+    margin: 0 6px;
+    
+}
+
+.edging {
+
+    order: 2;
+    width: 200px;
+    background-image: url(./assets/wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    flex: 2;
+    border: 3px solid rgb(213, 213, 224);
+    border-radius: 25px;
+    width:auto;
+}
+
+.title {
+
+    text-shadow: 2px 1px 2px black;
+    text-align: center;
+    color: rgb(241, 241, 241);
+    font-size: larger;
+    position: relative;
+    vertical-align: middle;
+    top: 34%;
+
+}
+
+.picture {
+    border-radius: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 1em;
+}
+
+li {
+    font-family: 'MyWebFont', Arial, sans-serif;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+span {
+    width: 5%;
+}
+@media screen and (max-width: 2560px)  {
+    .part1 {
+     width: 16%;
+    }
+    .part2 {
+     width: 28%;
+    } 
+ }
+ @media screen and (max-width:1440px) {
+    #contents {
+        width: 100%;
+    }
+    .edging {
+        display: none;
+    }
+    .picture {
+        float: left;
+    }
+    .part1  {
+        font-size: small;
+        width: 96%;
+    }
+    .part2 {
+        font-size: small;
+        width:96%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #contents {
+        width: 100%;
+        flex-direction: column;
+    }
+    .part1  {
+        font-size: small;
+        width: 96%;
+    }
+    .part2 {
+        font-size: small;
+        width:96%;
+    }
+}
+@media screen and (max-width: 425px) {
+    
+   .title {
+        font-size: 0.5em;
+        width: auto;
+    }
+    .part1  {
+        font-size: small;
+        width: 92%;
+    }
+    .part2 {
+        font-size: small;
+        width:92%;
+    }
+}
+
+
+
+
+
+
