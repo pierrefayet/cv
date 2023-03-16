@@ -55,7 +55,7 @@ header img {
 
     order: 2;
     width: 200px;
-    background-image: url(./assets/wallpaper.jpg);
+    background-image: url(../assets/wallpaper.jpg);
     background-position: center;
     background-size: cover;
     flex: 2;
